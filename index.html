@@ -10,8 +10,16 @@
     <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/header.css">
     <script src="./script/header.js"></script>
+
+    <!--  swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
+    <!-- pc용 헤더  -->
     <header>
         <div class="common-frame">
             <div class="logo">
@@ -81,6 +89,8 @@
             </ul>
         </div>
     </header>
+
+    <!-- 스마트 기기에서 보이는 메뉴 -->
     <div class="menu-smart-hidden">
         <div class="menu-top">
             <div class="common-frame">
@@ -179,6 +189,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- 스마트 기기용 헤더 -->
     <div class="header-smart">
         <div class="common-frame">
             <div class="logo">
@@ -191,5 +203,56 @@
             </span>
         </div>
     </div>
+
+    <!-- 전체 컨텐츠 -->
+    <main>
+        <!-- 히어로 배너 -->
+         <!-- Slider main container -->
+        <div class="swiper hero-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./img/slide1-pc.jpg" alt="Allure Era 배너 이미지 1" class="pc">
+                    <img src="./img/slide1-pad.jpg" alt="llure Era 배너 이미지 1" class="pad">
+                    <img src="./img/slide1-mo.jpg" alt="llure Era 배너 이미지 1" class="mo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/slide2-pc.jpg" alt="llure Era 배너 이미지 2" class="pc">
+                    <img src="./img/slide2-pad.jpg" alt="llure Era 배너 이미지 2" class="pad">
+                    <img src="./img/slide2-mo.jpg" alt="llure Era 배너 이미지 2" class="mo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/slide3-pc.jpg" alt="llure Era 배너 이미지 3" class="pc">
+                    <img src="./img/slide3-pad.jpg" alt="llure Era 배너 이미지 3" class="pad">
+                    <img src="./img/slide3-mo.jpg" alt="llure Era 배너 이미지 3" class="mo">
+                </div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+            <script>
+                const heroSlider = new Swiper('.hero-slider', {
+                    // Optional parameters
+                    direction: 'horizontal',
+                    loop: true,
+
+                    // If we need pagination
+                    pagination: {
+                        el: '.pagination',
+                    },
+
+                    // Navigation arrows
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    // And if we need scrollbar
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                    });
+            </script>
+    </main>
 </body>
 </html>
