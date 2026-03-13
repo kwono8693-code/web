@@ -6,6 +6,11 @@ header{
     overflow: hidden;
     box-sizing: border-box;
     transition: all 0.5s ease 0s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
 }
 header:hover{
     max-height: 400px;
@@ -61,6 +66,12 @@ header .sns li{
     .header-smart{
         display: block;
         border-bottom: 1px solid var(--point-color);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        background-color: #fff;
     }
     .header-smart .common-frame{
         display: flex;

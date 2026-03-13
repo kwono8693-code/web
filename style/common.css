@@ -27,8 +27,11 @@ p{
 .de{
     font-size: var(--fs-det);
 }
-.logo img{
+.logo{
     line-height: 0;
+}
+.logo img{
+    height: 5rem;
 }
 .common-frame{
     width: 1440px;
@@ -44,6 +47,15 @@ p{
 .mo{
     display: none;
 }
+.pad{
+    display: none;
+}
+.pc{
+    display: block;
+}
+main{
+    margin-top: 5rem;
+}
 
 @media (max-width:1440px){
     html{
@@ -52,6 +64,15 @@ p{
     .common-frame{
         width: auto;
         margin: 0 2rem;
+    }
+    .pc{
+        display: none;
+    }
+    .pad{
+        display: block;
+    }
+    .mo{
+        display: none;
     }
 
 }
@@ -63,6 +84,12 @@ p{
     .common-frame{
         width: auto;
         margin: 0 1rem;
+    }
+    .pc{
+        display: none;
+    }
+    .pad{
+        display: none;
     }
     .mo{
         display: block;
