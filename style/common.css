@@ -27,6 +27,15 @@ p{
 .de{
     font-size: var(--fs-det);
 }
+.fwr{
+    font-weight: var(--fw-reg);
+}
+.fwm{
+    font-weight: var(--fw-med);
+}
+.fwb{
+    font-weight: var(--fw-bold);
+}
 .logo{
     line-height: 0;
 }
@@ -55,6 +64,15 @@ p{
 }
 main{
     margin-top: 5rem;
+}
+.btn-style{
+    display: inline-flex;
+    padding: .25rem 1.5rem;
+    align-items: center;
+    border: 1px solid #fff;
+}
+.btn-style:hover{
+    background-color: var(--point-color2);
 }
 
 @media (max-width:1440px){
