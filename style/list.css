@@ -1,0 +1,106 @@
+.sub-banner{
+    height: 600px;
+    background: url(../img/list-sub-banner.jpg) no-repeat 50% 50% /cover;
+}
+
+.sub-banner .common-frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--point-color);
+    height: 100%;
+}
+.title{
+    margin-top: var(--space-3x-large);
+    margin-bottom: var(--space-large);
+}
+.title .common-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-small);
+}
+.option{
+    margin-bottom: var(--space-normal);
+}
+.option .common-frame{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.total-view{
+    display: flex;
+    gap: var(--space-small);
+    align-items: center;
+}
+#view-filter{
+    border: 1px solid red;
+    padding: .3rem .5rem;
+}
+.list-option{
+    display: flex;
+    justify-content: flex-end;
+}
+.list-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: var(--space-x-large) var(--space-normal);
+}
+.list-wrap{
+    margin-bottom: var(--space-3x-large);
+}
+.list-grid li figure{
+    margin-bottom: var(--space-normal);
+    aspect-ratio: 1/1;
+    line-height: 0;
+    overflow: hidden;
+}
+.list-grid li:hover figure img{
+    transform: scale(1.1);
+}
+.list-grid li figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all .5s ease 0s;
+}
+.list-option{
+    margin-bottom: var(--space-small);
+}
+.list-grid li h4{
+    margin-bottom: var(--space-small);
+    display: -webkit-box;       
+    -webkit-box-orient: vertical;    
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-grid li p{
+    margin-bottom: var(--space-large);
+    display: -webkit-box;       
+    -webkit-box-orient: vertical;    
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.price{
+    font-size: var(--fs-h2);
+}
+
+
+
+@media (max-width:1440px){
+    .sub-banner{
+    height: 500px;
+}
+    .list-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width:768px){
+    .list-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
