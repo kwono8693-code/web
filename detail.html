@@ -17,8 +17,8 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-    <script src="./script/listArray.js"></script>
-    <script src="./script/listCtrl.js"></script>
+    <script src="./script/detail-list.js"></script>
+    <script src="./script/detail-recommend.js"></script>
     <script src="./script/heart.js"></script>
     <link rel="stylesheet" href="./style/detail.css">
 </head>
@@ -246,9 +246,11 @@
                         <dd class="fwb">₩ 39,000</dd>
                     </dl>
                     <ul class="btns-buy">
-                        <li class="btn-heart">
+                        <li>
                             <a href="#">
-                                <img src="./img/heart.svg" alt="관심 상품 등록">
+                                <span class="btn-heart">
+                                    <img src="./img/heart.svg" alt="관심 상품 등록">
+                                </span>
                             </a>
                         </li>
                         <li>
@@ -258,6 +260,159 @@
                             <a href="#">구매하기</a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+        <div class="common-frame sticky-menu-wrap">
+            <ul class="sticky-menu">
+                <li><a href="#">많이 찾는 제품</a></li>
+                <li><a href="#">제품 성분</a></li>
+                <li><a href="#">리뷰</a></li>
+            </ul>
+        </div>
+
+        <div class="recomd-product">
+            <div class="common-frame">
+                <h2>많이 찾는 제품</h2>
+                <ul class="list-grid">
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="nutri">
+            <div class="common-frame">
+                <h2>제품 성분</h2>
+                <div class="nutri-inner">
+                    <div class="nutri-1">
+                        <h3>Rose Velvet</h3>
+                        <p>로즈의 부드러운 향과 벨벳 같은 텍스처가 어우러져 손을 감싸는 클래식한 우아함의 완성</p>
+                        <figure>
+                            <img src="./img/pro-nutri-img.jpg" alt="시어버터 이미지">
+                        </figure>
+                    </div>
+                    <div class="nutri-2">
+                        <table>
+                            <tr>
+                                <th>성분명</th>
+                                <th>함량</th>
+                            </tr>
+                            <tr>
+                                <td class="fwb">정제수 (Water)</td>
+                                <td class="fwm">62.00</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">글리세린 (Glycerin)</td>
+                                <td class="fwm">10.00</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">시어버터 (Shea Butter)</td>
+                                <td class="fwm">8.00</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">호호바씨오일 (Jojoba Seed Oil)</td>
+                                <td class="fwm">6.00</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">판테놀 (Panthenol)</td>
+                                <td class="fwm">4.00</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">소듐하이알루로네이트</td>
+                                <td class="fwm">2.00</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">샌달우드 오일</td>
+                                <td class="fwm">0.50</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="common-frame">
+                <h2>리뷰</h2>
+                <div class="review-wrap">
+                    <div class="rev-con">
+                        <div class="rev-user-info">
+                            <h4>_soothing_day</h4>
+                            <div class="like">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                            </div>
+                            <p>2026-03-22</p>
+                        </div>
+                        <div class="rev-desc">
+                            <h4>우아한 장미 향에 반했어요</h4>
+                            <div class="rev-thumb-list-wrap">
+                                <ul class="rev-thumb-list">
+                                    <li><img src="./img/review1-1.jpg" alt="리뷰 이미지1-1"></li>
+                                    <li><img src="./img/review1-2.jpg" alt="리뷰 이미지1-2"></li>
+                                    <li><img src="./img/review1-3.jpg" alt="리뷰 이미지1-3"></li>
+                                </ul>
+                            </div>
+                            <p>
+                                처음 바르는 순간 은은하게 퍼지는 로즈 향이 정말 고급스럽습니다. 인위적인 장미 향이 아니라 자연스럽고 부드러운 느낌이라 더 마음에 들어요. 텍스처도 이름처럼 벨벳처럼 부드럽게 발리면서 끈적임이 거의 없습니다. 손에 흡수된 후에도 촉촉함이 오래 유지되는 점이 특히 좋았습니다. 요즘 자기 전에 꼭 바르는 필수템이 됐어요.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rev-con">
+                        <div class="rev-user-info">
+                            <h4>_urban_gentle</h4>
+                            <div class="like">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                                <img src="./img/icon-star-empty.svg" alt="좋아요 빈별">
+                            </div>
+                            <p>2026-03-20</p>
+                        </div>
+                        <div class="rev-desc">
+                            <h4>데일리로 쓰기 좋은 고급 핸드크림</h4>
+                            <div class="rev-thumb-list-wrap">
+                                <ul class="rev-thumb-list">
+                                    <li><img src="./img/review2-1.jpg" alt="리뷰 이미지2-1"></li>
+                                    <li><img src="./img/review2-2.jpg" alt="리뷰 이미지2-2"></li>
+                                    <li><img src="./img/review2-3.jpg" alt="리뷰 이미지2-3"></li>
+                                </ul>
+                            </div>
+                            <p>
+                                패키지부터 굉장히 세련된 느낌이라 선물용으로도 좋을 것 같습니다. 향은 너무 강하지 않고 은은하게 남아서 데일리로 쓰기 부담이 없어요. 발림성도 가볍고 빠르게 흡수되는 타입이라 낮에도 자주 사용하게 됩니다. 다만 건조한 날에는 한 번 더 덧발라야 충분한 보습이 느껴집니다. 그래도 전체적으로 만족도가 높은 제품입니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rev-con">
+                        <div class="rev-user-info">
+                            <h4>_rose_moment</h4>
+                            <div class="like">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                                <img src="./img/icon-star.svg" alt="좋아요 별">
+                            </div>
+                            <p>2026-03-18</p>
+                        </div>
+                        <div class="rev-desc">
+                            <h4>향과 텍스처 모두 만족스러운 제품</h4>
+                            <div class="rev-thumb-list-wrap">
+                                <ul class="rev-thumb-list">
+                                    <li><img src="./img/review3-1.jpg" alt="리뷰 이미지3-1"></li>
+                                    <li><img src="./img/review3-2.jpg" alt="리뷰 이미지3-2"></li>
+                                    <li><img src="./img/review3-3.jpg" alt="리뷰 이미지3-3"></li>
+                                </ul>
+                            </div>
+                            <p>
+                                처음 바르는 순간 은은하게 퍼지는 로즈 향이 정말 고급스럽습니다. 인위적인 장미 향이 아니라 자연스럽고 부드러운 느낌이라 더 마음에 들어요. 텍스처도 이름처럼 벨벳처럼 부드럽게 발리면서 끈적임이 거의 없습니다. 손에 흡수된 후에도 촉촉함이 오래 유지되는 점이 특히 좋았습니다. 요즘 자기 전에 꼭 바르는 필수템이 됐어요.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -84,8 +84,7 @@
     justify-content: flex-end;
     align-items: center;
 }
-.btns-buy > li{
-}
+
 .btns-buy > li > a{
     display: flex;
     padding: var(--space-small) 0;
@@ -111,8 +110,178 @@
 .btn-heart img{
     height: 1.2rem;
 }
+.sticky-menu-wrap{
+    margin-bottom: 5rem;
+    overflow-x: auto;
+    position: sticky;
+    left: 0;
+    top: 5rem;
+    margin: var(--space-3x-large) auto;
+    background-color: #fff;
+    z-index: 1000;
+    padding-bottom: var(--space-small);
+}
+.sticky-menu{
+    display: flex;
+    gap: var(--space-normal);
+    justify-content: center;
+    font-size: var(--fs-bd2);
+    font-weight: var(--fw-bold);
+}
+.sticky-menu li{
+    flex: 1;
+    text-align: center;
+    border-bottom: 2px solid var(--point-color);
+    flex-shrink: 0;
+}
+.sticky-menu a{
+    padding: var(--space-small);
+    display: block;
+}
+.recomd-product h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.list-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: var(--space-x-large) var(--space-normal);
+}
+.list-grid li figure{
+    margin-bottom: var(--space-normal);
+    aspect-ratio: 1/1;
+    line-height: 0;
+    overflow: hidden;
+}
+.list-grid li:hover figure img{
+    transform: scale(1.1);
+}
+.list-option{
+    margin-bottom: var(--space-small);
+    display: flex;
+    justify-content: flex-end;
+}
+.list-grid li figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all .5s ease 0s;
+}
+.list-grid li h4{
+    margin-bottom: var(--space-small);
+    display: -webkit-box;       
+    -webkit-box-orient: vertical;    
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-grid li p{
+    margin-bottom: var(--space-large);
+    display: -webkit-box;       
+    -webkit-box-orient: vertical;    
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.price{
+    font-size: var(--fs-h2);
+}
+.nutri{
+    margin-top: var(--space-3x-large);
+}
+.nutri h2{
+    text-align: center;
+    margin-bottom: var(--space-x-large);
+}
+.nutri-inner{
+    display: flex;
+    gap: var(--space-normal);    
+}
+.nutri-inner > div{
+    flex: 1;
+}
+.nutri-1 h3{
+    margin-bottom: var(--space-small);
+}
+.nutri-1 h3+p{
+    margin-bottom: var(--space-large);
+}
+.nutri-2{
+    padding-top: 5rem;
+}
+.nutri-2 table{
+    width: 100%;
+}
+.nutri-2 table th{
+    text-align: left;
+    width: 50%;
+    font-weight: var(--fw-reg);
+    padding: var(--space-small) 0;
+}
+.nutri-2 table td{
+    padding: var(--space-small) 0;
+}
+.nutri-2 table tr{
+    border-bottom: 1px solid #000;
+}
+.review{
+    margin: var(--space-3x-large) 0;
+}
+.review h2{
+    text-align: center;
+    margin-bottom: var(--space-x-large);   
+}
+.rev-con{
+    display: flex;
+    gap: var(--space-normal);
+    padding: var(--space-large);
+    border-bottom: 1px solid var(--point-color  );
+}
+.rev-user-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-small);
+}
+.rev-desc{
+    flex: 3;
+}
+.rev-desc h4{
+    margin-bottom: var(--space-normal);
+}
+.rev-thumb-list-wrap{
+    overflow-x: auto;
+}
+.rev-thumb-list{
+    margin-bottom: var(--space-normal);
+    line-height: 0;
+    display: flex;
+    gap: var(--space-normal);
+}
+.rev-thumb-list > li{
+    flex-shrink: 0;
+}
+.rev-thumb-list > li img{
+    width: 460px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
 
-@media (max-width:1440px){}
+
+
+@media (max-width:1440px){
+    .list-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .sticky-menu-wrap{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .rev-thumb-list > li img{
+        max-width: 300px;
+    }
+
+}
 @media (max-width:768px){
     .product1 .common-frame{
         flex-direction: column;
@@ -127,5 +296,26 @@
     }
     .sell-info > div:last-of-type {
         text-align: left;
+    }
+    .list-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sticky-menu-wrap{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .nutri-inner{
+        flex-direction: column;
+        gap: var(--space-x-large);
+
+    }
+    .nutri-2{
+        padding-top: 0;
+    }
+    .rev-con{
+        flex-direction: column;
+    }
+    .rev-thumb-list > li img{
+        max-width: 250px;
     }
 }
