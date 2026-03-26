@@ -47,20 +47,4 @@ let listArray = [
             pThumbnail:"menu-list6.jpg",
             plike:false,
         },
-        {
-            pid:6,
-            pName:"Calm Sandal",
-            pDesc:"샌달우드의 잔잔하고 안정적인 향기",
-            pPrice:19000,
-            pThumbnail:"menu-list7.jpg",
-            plike:false,
-        },
-        {
-            pid:7,
-            pName:"Soft Linen",
-            pDesc:"깨끗한 린넨처럼 산뜻하고 포근한 향",
-            pPrice:19000,
-            pThumbnail:"menu-list8.jpg",
-            plike:false,
-        },
     ]

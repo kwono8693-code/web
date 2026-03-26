@@ -13,7 +13,7 @@
 .product1 .common-frame > figure img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .product1 .common-frame > div{
     flex: 1;

@@ -11,16 +11,19 @@
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/footer.css">
     <script src="./script/header.js"></script>
+    <script src="./script/getParam.js"></script>
+    <script src="./script/toWon.js"></script>
 
     <!--  swiper js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-    <script src="./script/detail-list.js"></script>
+    <script src="./script/listArray.js"></script>
     <script src="./script/detail-recommend.js"></script>
     <script src="./script/heart.js"></script>
     <link rel="stylesheet" href="./style/detail.css">
+    <script src="./script/detail.js"></script>
 </head>
 <body>
     <!-- pc용 헤더  -->
@@ -210,70 +213,19 @@
 
     <main>
         <div class="product1">
-            <div class="common-frame">
-                <figure class="img-pro-thumb">
-                    <img src="./img/pro-thumb-detail.jpg" alt="상품 썸네일 이미지">
-                </figure>
-                <div class="txt-pro">
-                    <h1>Rose Velvet</h1>
-                    <p class="fwm">로즈의 부드러운 향과 벨벳 같은 텍스처가 어우러져 손을 감싸는 클래식한 우아함의 완성</p>
-                    <dl class="price-table">
-                        <dt>가격</dt>
-                        <dd>₩ 39,000</dd>
-                        <dt>배송비</dt>
-                        <dd>
-                            ₩ 3,000
-                            <span>(50,000원 이상 구매 시 무료)</span>
-                        </dd>
-                    </dl>
-                    <div class="sell-info">
-                        <div class="fwb">Rose Velvet</div>
-                        <div>
-                            <div class="box-number">
-                                <span class="btn-minus">
-                                    <img src="./img/detail-minus.svg" alt="감소 버튼">
-                                </span>
-                                <span class="current-count">1</span>
-                                <span class="btn-plus">
-                                    <img src="./img/detail-plus.svg" alt="증가 버튼">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="fwb">₩ 39,000</div>
-                    </div>
-                    <dl class="price-result">
-                        <dt>전체 금액</dt>
-                        <dd class="fwb">₩ 39,000</dd>
-                    </dl>
-                    <ul class="btns-buy">
-                        <li>
-                            <a href="#">
-                                <span class="btn-heart">
-                                    <img src="./img/heart.svg" alt="관심 상품 등록">
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">장바구니</a>
-                        </li>
-                        <li>
-                            <a href="#">구매하기</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
         </div>
         <div class="common-frame sticky-menu-wrap">
             <ul class="sticky-menu">
-                <li><a href="#">많이 찾는 제품</a></li>
-                <li><a href="#">제품 성분</a></li>
-                <li><a href="#">리뷰</a></li>
+                <li><a href="#point1">많이 찾는 제품</a></li>
+                <li><a href="#point2">제품 성분</a></li>
+                <li><a href="#point3">리뷰</a></li>
             </ul>
         </div>
 
         <div class="recomd-product">
             <div class="common-frame">
-                <h2>많이 찾는 제품</h2>
+                <h2 id="point1">많이 찾는 제품</h2>
                 <ul class="list-grid">
 
                 </ul>
@@ -282,7 +234,7 @@
 
         <div class="nutri">
             <div class="common-frame">
-                <h2>제품 성분</h2>
+                <h2 id="point2">제품 성분</h2>
                 <div class="nutri-inner">
                     <div class="nutri-1">
                         <h3>Rose Velvet</h3>
@@ -333,7 +285,7 @@
 
         <div class="review">
             <div class="common-frame">
-                <h2>리뷰</h2>
+                <h2 id="point3">리뷰</h2>
                 <div class="review-wrap">
                     <div class="rev-con">
                         <div class="rev-user-info">
