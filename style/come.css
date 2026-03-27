@@ -1,0 +1,112 @@
+.sub-banner{
+    background: 
+    linear-gradient(45deg,rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.267)),
+    url(../img/sub-banner-come.jpg) no-repeat 50% 50% / cover;
+    height: 600px;
+    color: #fff;
+
+}
+.sub-banner .common-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.come1{
+    margin-top: var(--space-3x-large);
+}
+.come1 h3{
+    text-align: center;
+    margin-bottom: var(--space-small);
+}
+.come1 h3+p{
+    text-align: center;
+    margin-bottom: var(--space-x-large);
+}
+.come1-content{
+    display: flex;
+    gap: 7rem;
+}
+.map{
+    width: 708px;
+    aspect-ratio: 3/2;
+}
+.txt{
+    padding-top: var(--space-large);
+    flex: 1;
+}
+.txt h4{
+    margin-bottom: 1.5rem;
+}
+.come1-dl1{
+    display: grid;
+    gap: var(--space-small) var(--space-normal);
+    grid-template-columns: 2fr 3fr;
+    margin-bottom: var(--space-x-large);
+}
+.come1-dl2{
+    display: grid;
+    gap: var(--space-small) var(--space-normal);
+    grid-template-columns: 2fr 3fr;
+}
+.come1-dl2+p{
+    margin-top: var(--space-small);
+    font-size: var(--fs-bd2);
+    color: #FF0004;
+}
+.come2{
+    margin-top: var(--space-3x-large);
+}
+.come2 h3{
+    text-align: center;
+    margin-bottom: var(--space-large);
+}
+.come2-list{
+    display: flex;
+    gap: var(--space-normal);
+}
+.come2-list li{
+    flex: 1;
+    border: 1px solid red;
+    padding: var(--space-large) var(--space-normal);
+}
+@media (max-width:1440px){
+    .sub-banner{
+        height: 500px;
+    }
+    .come1-content{
+        gap: var(--space-normal);
+    }
+    .map{
+        width: initial;
+        flex: 1;
+        aspect-ratio: 1/1;
+    }
+}
+@media (max-width:1024px){
+    .sub-banner{
+        height: 500px;
+    }
+    .come1-content{
+        gap: var(--space-normal);
+    }
+    .map{
+        width: initial;
+        flex: 1;
+        aspect-ratio: 1/1;
+    }
+}
+@media (max-width:768px){
+    .sub-banner{
+        text-align: center;
+    }
+    .come1-content{
+        flex-direction: column;
+        gap: var(--space-large);
+
+    }
+    .come1 h3+p {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+}
