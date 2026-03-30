@@ -55,7 +55,7 @@
     color: #FF0004;
 }
 .come2{
-    margin-top: var(--space-3x-large);
+    margin: var(--space-3x-large) 0;
 }
 .come2 h3{
     text-align: center;
@@ -67,9 +67,14 @@
 }
 .come2-list li{
     flex: 1;
-    border: 1px solid red;
+    background-color: #f2f2f2;
     padding: var(--space-large) var(--space-normal);
 }
+.come2-list li h5{
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
 @media (max-width:1440px){
     .sub-banner{
         height: 500px;
@@ -108,5 +113,8 @@
     .come1 h3+p {
         text-align: center;
         margin-bottom: 1.5rem;
+    }
+    .come2-list{
+        flex-direction: column;
     }
 }
