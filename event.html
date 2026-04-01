@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event-page</title>
+    <link rel="stylesheet" href="./style/font.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/system.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <script src="./script/header.js"></script>
+    <script src="./script/footer.js"></script>
+
+    <!--  swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="./style/event.css">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main>
+        <div class="sub-banner">
+            <div class="common-frame">
+                <h1>Spring Sale</h1>
+            </div>
+        </div>
+        <div class="event1">
+            <div class="common-frame">
+                <h3>EVENT</h3>
+                <p>
+                    일상에 작은 설렘을 더하는 순간, <br>
+                    Allure Era가 준비한 특별한 혜택을 만나보세요.
+                </p>
+                <div class="event1-content">
+                    <div class="event1-img-slider">
+                        <div class="swiper event1-img-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/event-content-img1.jpg" alt="지금 Allure Era 전 제품을 10% 할인된 가격으로 만날 수 있습니다.">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/event-content-img2.jpg" alt="구매 금액에 따라 Allure Era의 감성을 담은 기프트를 증정해드립니다.">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/event-content-img3.jpg" alt="오프라인 매장 익스클루시브 혜택">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event1-txt-slider">
+                        <div class="swiper event1-txt-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h4>The Season of Allure</h4>
+                                    <p class="bd2 fwm">지금 Allure Era 전 제품을 10% 할인된 가격으로 만날 수 있습니다. <br>부담 없이 경험할 수 있는 특별한 시즌 혜택으로 당신만의 시그니처 향을 찾아보세요.</p>
+                                    <p class="bd2 fwm">봄을 맞아 Allure Era의 시그니처 향을 더욱 깊이 경험해 보세요.<br>따뜻해지는 계절과 함께, 일상에 은은한 여유를 더합니다.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4>Signature Gifts by Purchase Amount</h4>
+                                    <p class="bd2 fwm">
+                                        구매 금액에 따라 Allure Era의 감성을 담은 기프트를 증정해드립니다. <br>
+                                        일상 속 작은 순간까지 특별하게 채워보세요.
+                                    </p>
+                                    <p class="bd2 fwm">
+                                        정성스럽게 준비된 기프트가 당신의 경험을 더욱 풍성하게 만듭니다. <br>
+                                        소소한 순간에도 우아함을 더하는 Allure Era만의 배려를 느껴보세요.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4>In-Store Exclusive Benefits</h4>
+                                    <p class="bd2 fwm">
+                                        매장 방문 고객만을 위한 특별한 혜택을 경험해보세요. <br>
+                                        직접 체험과 함께 차별화된 Allure Era의 감성을 만나보실 수 있습니다.
+                                    </p>
+                                    <p class="bd2 fwm">
+                                        공간과 향이 어우러진 깊이 있는 경험이 준비되어 있습니다. <br>
+                                        오직 그 자리에서만 느낄 수 있는 특별한 순간을 만나보세요.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const event1ImgSlider = new Swiper(".event1-img-swiper",{
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false
+                },
+                speed: 1000,
+            })
+            event1ImgSlider.on('slideChange', function () {
+                // console.log(event1ImgSlider.realIndex);
+                event1TxtSlider.slideTo(event1ImgSlider.realIndex, 1000)
+            });
+            // event1ImgSlider.realIndex
+            const event1TxtSlider = new Swiper(".event1-txt-swiper",{
+                effect: "fade",
+                speed: 1000
+            }) 
+        </script>
+
+        <div class="event2">
+            <div class="common-frame">
+                <h3>진행 중인 이벤트</h3>
+                <ul class="event-grid">
+                    <li>
+                        <figure>
+                            <img src="./img/event-content2-img1.jpg" alt="봄맞이 10% 스페셜 할인">
+                        </figure>
+                        <h4>봄맞이 10% 스페셜 할인</h4>
+                        <p>Allure Era 전 제품을 10% 할인된 가격으로 만나보세요.</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/event-content2-img2.jpg" alt="구매 금액별 시그니처 기프트">
+                        </figure>
+                        <h4>구매 금액별 시그니처 기프트</h4>
+                        <p>구매 금액에 따라 Allure Era의 감성을 담은 기프트를 증정해드립니다.</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/event-content2-img3.jpg" alt="오프라인 매장 익스클루시브 혜택">
+                        </figure>
+                        <h4>오프라인 매장 익스클루시브 혜택</h4>
+                        <p>매장 방문 고객만을 위한 특별한 혜택을 경험해 보세요.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <div id="include-footer"></div>
+</body>
+</html>
